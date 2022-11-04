@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Калькулятор </title>
+	<meta charset="UTF-8">
+<script>
+	function func(){
+	var num1 = Number(document.getElementById("first").value);
+	var num2 = Number(document.getElementById("second").value);
+	var plus = num1 + num2;
+	document.getElementById("plus").innerHTML = plus;
+        }
+
+    	function func2(){
+        var num12 = Number(document.getElementById("first2").value);
+        var num22 = Number(document.getElementById("second2").value);
+        var min = num12 - num22;
+        document.getElementById("min").innerHTML = min;
+        }
+
+	function func3(){
+        var num13 = Number(document.getElementById("first3").value);
+       	var num23 = Number(document.getElementById("second3").value);
+       	var pomn = num13 * num23;
+        document.getElementById("pomn").innerHTML = pomn;
+        }
+	function func4(){
+	var num14 = Number(document.getElementById("first4").value);
+	var num24 = Number(document.getElementById("second4").value);
+        var dil = num14 / num24;
+        document.getElementById("dil").innerHTML = dil;
+        }
+    	function func5(){
+        var num15 = Number(document.getElementById("first5").value);
+      	var num25 = Number(document.getElementById("second5").value);
+       	var step =  Math.pow(num15, num25);
+       	document.getElementById("step").innerHTML = step;
+        }
+</script>
+</head>
+<body>
+
+<p>
+<input id="first"/> + <input id="second"/> = <output id="plus"/>
+<button onclick="func()">Результат</button> 
+</p><p>
+<input id="first2"/> - <input id="second2"/> = <output id="min"/>
+<button onclick="func2()">Результат</button>
+</p><p>
+<input id="first3"/> * <input id="second3"/> = <output id="pomn"/>
+<button onclick="func3()">Результат</button>
+</p><p>
+<input id="first4"/> / <input id="second4"/> = <output id="dil"/>
+<button onclick="func4()">Результат</button>
+</p><p>
+<input id="first5"/> в <input id="second5"/> ступіні = <output id="step"/>
+<button onclick="func5()">Результат</button>
+</p>
+
+
+</body>
+</html>
